@@ -1,0 +1,44 @@
+{
+  "name": "secure_api_service",
+  "version": "1.0.0",
+  "description": "This Project includes Secure API with 2 separate services",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node ./dist/app.js",
+    "build": "tsc",
+    "service-fetch-users": "node ./dist/services/service-users",
+    "service-fetch-posts": "node ./dist/services/service-posts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Santhosh Suryavanshi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/express": "^4.17.2",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/mongoose": "^5.7.0",
+    "@types/passport": "^1.0.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

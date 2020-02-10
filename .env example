@@ -1,0 +1,23 @@
+# MongoDB Connection URL with DB Login Username & password. Replace <mongo_db_user_name>, <mongo_db_password>, <mongo-srv>
+MONGODB_URL=mongodb+srv://<mongo_db_user_name>:<mongo_db_password>@mongodb-<mongo-srv>.mongodb.net/
+
+
+# List of all JSON API URLs
+USERS_API_URL=https://jsonplaceholder.typicode.com/users
+POSTS_API_URL=https://jsonplaceholder.typicode.com/posts
+COMMENTS_API_URL=https://jsonplaceholder.typicode.com/comments
+
+# Users DB Name Settings & Set any required Login Password
+MASTER_DB_NAME=master
+USERS_COLLECTION_NAME=users
+USER_PASSWORD=password
+
+# Users Posts & Comments DB Names Settings
+USER_DB_NAME_PREFIX=user_posts_db
+USER_POSTS_COLLECTION_NAME=posts
+
+# JWT Secret Token - Should not be changed once set & used.
+JWT_SECRET_KEY=SecureSecretAPIKey2020
+
+# Define any convenient port
+PORT=3000

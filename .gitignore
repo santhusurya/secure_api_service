@@ -1,0 +1,9 @@
+# .env file used for local environment
+.env
+
+# Final Project Distribution files folder. This will be generated on project run.
+/dist
+
+# node_modules folder. This will be installed as per package.json
+/node_modules
+
