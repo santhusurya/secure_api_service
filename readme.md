@@ -8,7 +8,7 @@
 
 > ##### Step 1:
 >
-> Clone this repository's latest source into your local system & extract the package contents into a development folder.
+> Clone/Download this repository's latest source into your local system & extract the package contents into a development folder.
 
 
 
@@ -19,6 +19,14 @@
 ```
 >> npm install
 ```
+
+
+
+> **** VERY IMPOTANT NOTE: To fix node_modules installation errors ****
+>
+> - This project was built on a Windows machine & the `package-lock.json` was created with reference to Windows machine.
+> - If you may come across any error when you run above command `npm install` then its recommended to remove `node_modules` folder if exists & even remove `package-lock.json` file to reset errors.
+> - Once you finish removing unnecessary(issue causing) folders & files, then again run command `npm install` . This time it finishes installing all necessary node modules without any error.
 
 
 
@@ -75,6 +83,10 @@
 
 
 
+![Service Console Output - service-fetch-users](screenshots/service-fetch-users.png)
+
+
+
 ------
 
 
@@ -115,6 +127,10 @@
 
 
 
+![Service Console Output - service-fetch-posts](screenshots/service-fetch-posts.png)
+
+
+
 ------
 
 
@@ -149,7 +165,7 @@
 > ##### b) Create a Rest API to fetch user details.
 >
 > 2. http://localhost:3000/api/v1/users/:userID
->   (:userID is the ID of the user which ranges between 1 to 10 as per the Users API)
+>     (:userID is the ID of the user which ranges between 1 to 10 as per the Users API)
 >
 >   
 >
@@ -161,8 +177,8 @@
 >    
 >
 >
-> ##### d) Create a Rest API to fetch all posts (API to be accessed only by Admin)
+> ##### d) Create a Rest API to fetch user posts
 >
 > 4. http://localhost:3000/api/v1/posts/user/:userID
 > (:userID is the ID of the user which ranges between 1 to 10 as per the Users API)
-> (This API fetches all the Posts & associated Comments stored in separate DB as per each individual user specified through :userID)
+> (This API fetches all the Posts & associated Comments stored in separate DB as per each individual user ID specified through :userID)
